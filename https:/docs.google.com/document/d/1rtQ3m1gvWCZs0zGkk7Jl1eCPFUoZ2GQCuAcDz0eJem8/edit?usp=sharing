@@ -1,0 +1,90 @@
+                 	
+                      	Document Object
+ 
+                     	Window Object
+ 
+ 
+Ø The document object represent a web page that is loaded in the browser.
+Ø By accessing the document object, we can access the element in the HTML page.
+Ø With the help of document objects, we can add dynamic content to our web page.
+Ø The document object can be accessed with a window.document or just document.
+ 	
+  	Syntax:
+ 
+            	document.property_name;
+  
+ 
+Ø The window object is the topmost object of the DOM hierarchy.
+Ø It represents a browser window or frame that displays the contents of the webpage.
+Ø  Whenever a window appears on the screen to display the contents of the document, the window object is created.
+ 
+ 
+ 
+   	Syntax:
+  
+              	window.property_name;
+Ø  addEventListener(): It is used to attach an event handler to the specified element.
+Ø  adoptNode(): It is used to adopt a node from another document and it returns a node object, representing the adopted node.
+Ø  close(): It is used to close the output stream.
+Ø  createAttribute(): It is used to create an attribute node with the specified name and returns the attribute object.
+Ø  createComment(): It is used to create a comment node with some text.
+Ø  createDocumentFragment(): It is used to create the document fragment to change the content of the document.
+Ø  createElement(): It is used to create HTML element .
+Ø  createEvent(): It is used to create a new events object.
+Ø  createTextNode(): It is used to create a textnode.
+Ø  execCommand(): It is used to execute a command specified by the user on the editable selected section. It returns a Boolean value.
+Ø  fullscreenEnabled(): It is used to check whether the document can be viewed in fullscreen mode or not. It returns a boolean value.
+Ø  getElementById(): It returns the object of the given ID. If no object with that id exists then it returns null.
+Ø  getElementsByClassName(): It returns an object containing all the elements with the specified class names in the document as objects.
+Ø  getElementsByName(): It returns an object containing all the elements with the specified name in the document as objects.
+Ø  getElementsByTagName(): It returns an object containing all the elements with the specified tag names in the document as objects.
+Ø  hasFocus(): It returns a boolean value that indicates whether the document or element has focus or not.
+Ø  importNode(): It imports the copy of a node from another document in the current document.
+Ø  normalize(): It flushes out the empty nodes and merges the adjacent text nodes with the first text node and
+Ø  normalizeDocument(): It is used to normalize an HTML document by removing any empty text nodes and joining the adjacent text nodes.
+Ø  open(): It is used to open the output stream to collect the output.
+Ø  querySelector(): It returns the first element that matches a specified CSS selector(s) in the document.
+Ø  querySelectorAll(): It returns a collection of an element’s child elements that matches a specified CSS selector(s) in the document
+Ø  removeEventListener(): It removes the event handler from an element that has an attached event.
+Ø  renameNode(): It is used to rename the node.
+Ø  write(): It is used to write some content or javascript code in the document.
+Ø  writeln(): It is used to write a document with a newline character after each statement.
+ 
+Ø  alert(): It is used to display an alert box. It displays a specified message along with an OK button and is generally used to make sure that the information comes through the user.
+Ø  atob(): It is used for decoding a base-64 encoded string. It is used to decode a string of data that has been encoded using the btoa() method.
+Ø  blur(): It is used to remove focus from the current window.
+Ø  btoa(): It is used for encoding a string in base-64 format.
+Ø  clearInterval(): It clears the interval which has been set by the setInterval() function before that.
+Ø  clearTimeout(): It clears the timeout which has been set by the setTimeout()function before that.
+Ø  close(): It is used for closing a certain window or tab of the browser which was previously opened.
+Ø  confirm(): It is used to display a modal dialog with an optional message and two buttons i.e. OK and Cancel. It returns true if the user clicks “OK”, and false otherwise.
+Ø  focus(): It is used to give focus to an element in the current window.
+Ø  getComputedStyle(): It is used to get all the computed CSS properties and values of the specified element.
+Ø  getSelection(): It returns a Selection object representing the range of text selected by the user
+Ø  matchMedia(): It is used to return a MediaQueryList object which represents the result of the specified CSS media query string.
+Ø  open(): It is used to open a new tab or window with the specified URL and name.
+Ø  moveBy(): It is used for moving a window with a specified number of pixels relative to its current coordinates.
+Ø  moveTo(): It is used in the window to move the window from the left and top coordinates.
+Ø  prompt(): It is used to display a dialog with an optional message prompting the user to input some text
+Ø  resizeBy(): It is used to resize a window by the specified amount.
+Ø  resizeTo(): It is used to resize a window to the specified width and height.
+Ø  scrollBy(): It is used to scroll the document by the given number of pixels.
+Ø  scrollTo(): It is used to scroll to a particular set of coordinates in the document.
+Ø  setInterval(): It repeats a given function at every given time interval.
+Ø  setTimeout(): It executes a function, after waiting a specified number of milliseconds.
+Ø  stop(): It is used to stop the window from loading resources in the current browsing context.
+ 
+
+ 
+ 
+ 
+ 
+DIFFERENCE BETWEEEN HTTP1 AND HTTP2
+HTTP stands for hypertext transfer protocol, and it is the basis for almost all web applications. More specifically, HTTP is the method computers and servers use to request and send information. For instance, when someone navigates to cloudflare.com on their laptop, their web browser sends an HTTP request to the Cloudflare servers for the content that appears on the page. Then, Cloudflare servers send HTTP responses with the text, images, and formatting that the browser displays to the user.
+The first usable version of HTTP was created in 1997. Because it went through several stages of development, this first version of HTTP was called HTTP/1.1. This version is still in use on the web. In 2015, a new version of HTTP called HTTP/2 was created.
+HTTP/2 solves several problems that the creators of HTTP/1.1 did not anticipate. In particular, HTTP/2 is much faster and more efficient than HTTP/1.1. One of the ways in which HTTP/2 is faster is in how it prioritizes content during the loading process.
+In HTTP/2, developers have hands-on, detailed control over prioritization. This allows them to maximize perceived and actual page load speed to a degree that was not possible in HTTP/1.1.
+HTTP/2 offers a feature called weighted prioritization. This allows developers to decide which page resources will load first, every time. In HTTP/2, when a client makes a request for a webpage, the server sends several streams of data to the client at once, instead of sending one thing after another. This method of data delivery is known as multiplexing. Developers can assign each of these data streams a different weighted value, and the value tells the client which data stream to render first.
+Imagine that Alice wants to read a novel that her friend Bob wrote, but both Alice and Bob only communicate through the regular mail. Alice sends a letter to Bob and asks Bob to send her his novel. Bob decides to send the novel HTTP/1.1-style: He mails one chapter at a time, and he only mails the next chapter after receiving a reply letter from Alice confirming that she received the previous chapter. Using this method of content delivery, it takes Alice many weeks to read Bob's novel.
+Now imagine that Bob decides to send Alice his novel HTTP/2-style: In this case, he sends each chapter of the novel separately (to stay within the postal service's size limits) but all at the same time. He also numbers each chapter: Chapter 1, Chapter 2, etc. Now, Alice receives the novel all at once and can assemble it in the correct order on her own time. If a chapter is missing, she may send a quick reply asking for that specific chapter, but otherwise the process is complete, and Alice can read the novel in just a few days.
+In HTTP/2, data is sent all at once, much like Bob when he sends Alice multiple chapters at once. And just like Bob, developers get to number the chapters in HTTP/2. They can decide if the text of a webpage loads first, or the CSS files, or the JavaScript, or whatever they feel is most important for the user experience.
